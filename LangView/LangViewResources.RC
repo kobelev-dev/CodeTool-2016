@@ -1,0 +1,639 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.H"
+#include "../LangView/LangViewResources.H"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDBMP_LEX_ITEMS         BITMAP                  "..\\LangView\\Bitmaps\\Lex-Items-Icons.BMP"
+IDBMP_LANG_SOURCE       BITMAP                  "..\\LangView\\Bitmaps\\Lang-Source-Icons.BMP"
+IDBMP_EVENT_DETAILS     BITMAP                  "..\\LangView\\Bitmaps\\Event-Details-Icons.BMP"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LANGV_ABOUT_BOX DIALOGEX 50, 80, 200, 92
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION " Code Structure Analysis Toolkit"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CTEXT           "App name",IDC_ABOUTBOX_APP_NAME,0,10,200,9
+    CTEXT           "App version",IDC_ABOUTBOX_APP_VERSION,0,24,200,9
+    CTEXT           "Kirill Kobelev",IDC_ABOUTBOX_COMPANY_NAME,0,37,200,9
+    CTEXT           "Copyright (C) 2010-2012. All rights reserved.",IDC_ABOUTBOX_COPYRIGHT,0,51,200,9
+    CTEXT           "",IDC_ABOUTBOX_VERSION_PURPOSE,0,61,200,9
+    PUSHBUTTON      "Close",IDCANCEL,74,68,50,15
+    LTEXT           "BUILD",IDC_ABOUTBOX_BUILD_TYPE,156,70,34,10
+END
+
+IDD_LANGV_CONS_SINGLE_FILE_SCAN DIALOGEX 50, 10, 368, 98
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION " MidLev Parser Console "
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        " Parsing unit ",IDC_STATIC,5,3,357,67
+    LTEXT           "Source file:",IDC_STATIC,16,16,37,8
+    LTEXT           "MidLev lexemas:",IDC_STATIC,16,30,53,8
+    LTEXT           "MidLev events:",IDC_STATIC,16,40,50,8
+    LTEXT           "Errors:",IDC_STATIC,257,30,21,8
+    LTEXT           "Warnings:",IDC_STATIC,257,40,33,8
+    LTEXT           "Elapsed time:",IDC_STATIC,257,52,43,8
+    LTEXT           "C:\\Calvados\\Apps\\MidScanTest\\LangView\\Sample2.c",IDC_SCCONS_MAJOR_FILE_NAME,57,16,301,8
+    RTEXT           "<lexemas>",IDC_SCCONS_MID_LEV_LEXEMAS,73,30,40,8
+    RTEXT           "20 000 000",IDC_SCCONS_MID_LEV_EVENTS,73,40,40,8
+    RTEXT           "<errors>",IDC_SCCONS_NUM_ERRORS,304,30,36,8
+    RTEXT           "<warns>",IDC_SCCONS_NUM_WARNS,304,40,36,8
+    RTEXT           "00:02:28",IDC_SCCONS_ELAPSED_TIME,304,52,36,8
+    LTEXT           "Run time errors:",IDC_STATIC,16,76,54,8
+    LTEXT           "<rt_errs>",IDC_SCCONS_RUN_TIME_ERRORS,71,76,83,8
+    LTEXT           "<Major Status Message>",IDC_SCCONS_MAIN_MESSAGE,24,53,216,10
+    PUSHBUTTON      "Abort",IDC_SCCONS_CONTROL_BUTTON,279,77,61,14,WS_GROUP
+END
+
+IDD_LANGV_CONS_BATCH_PROC_SCAN DIALOGEX 50, 10, 368, 138
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION " MidLev Parser Console "
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        " Parsing unit ",IDC_STATIC,5,3,357,70
+    LTEXT           "Source file:",IDC_STATIC,16,16,37,8
+    LTEXT           "MidLev lexemas:",IDC_STATIC,16,30,53,8
+    LTEXT           "MidLev events:",IDC_STATIC,16,40,50,8
+    LTEXT           "Errors:",IDC_STATIC,257,30,21,8
+    LTEXT           "Warnings:",IDC_STATIC,257,40,33,8
+    LTEXT           "Elapsed time:",IDC_STATIC,257,50,43,8
+    LTEXT           "C:\\Calvados\\Apps\\MidScanTest\\LangView\\Sample2.c",IDC_SCCONS_MAJOR_FILE_NAME,57,16,301,8
+    RTEXT           "<lexemas>",IDC_SCCONS_MID_LEV_LEXEMAS,73,30,40,8
+    RTEXT           "20 000 000",IDC_SCCONS_MID_LEV_EVENTS,74,40,40,8
+    RTEXT           "<errors>",IDC_SCCONS_NUM_ERRORS,304,30,36,8
+    RTEXT           "<warns>",IDC_SCCONS_NUM_WARNS,304,40,36,8
+    RTEXT           "00:03:44",IDC_SCCONS_ELAPSED_TIME,304,50,36,8
+    GROUPBOX        " Run time info ",IDC_STATIC,246,78,116,28
+    LTEXT           "Errors:",IDC_STATIC,257,90,21,8
+    RTEXT           "<rt_errs>",IDC_SCCONS_RUN_TIME_ERRORS,304,90,36,8
+    GROUPBOX        " Batch information ",IDC_STATIC,5,78,234,49
+    LTEXT           "Files processed:",IDC_STATIC,16,90,70,8
+    LTEXT           "Directories processed:",IDC_STATIC,16,100,75,8
+    LTEXT           "Total elapsed time:",IDC_STATIC,16,110,70,8
+    LTEXT           "Errors:",IDC_STATIC,149,90,21,8
+    LTEXT           "Warnings:",IDC_STATIC,149,100,33,8
+    RTEXT           "<total_files>",IDC_SCCONS_BATCH_NUM_FILES,89,90,44,8
+    RTEXT           "<total_dirs>",IDC_SCCONS_BATCH_NUM_DIRS,89,100,44,8
+    RTEXT           "16:42:10",IDC_SCCONS_BATCH_ELAPS_TIME,89,110,44,8
+    RTEXT           "<num_errors>",IDC_SCCONS_BATCH_NUM_ERRORS,183,90,44,8
+    RTEXT           "<num_warns>",IDC_SCCONS_BATCH_NUM_WARNS,183,100,44,8
+    LTEXT           "<Major Status Message>",IDC_SCCONS_MAIN_MESSAGE,16,54,224,10
+    PUSHBUTTON      "Abort",IDC_SCCONS_CONTROL_BUTTON,274,112,61,14,WS_GROUP
+END
+
+IDD_LANGV_SVF_SOURCE_FILE_VIEW DIALOGEX 0, 0, 280, 150
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "File:",IDC_LVSSV_FNTITLE,4,3,14,8
+    LTEXT           "<fname>",IDC_LVSSV_FILENAME,20,3,216,8
+    RTEXT           "[Enclosure]",IDC_LVSSV_ENCLOSURE,238,3,38,8
+    CONTROL         "",IDC_LVSSV_FILEVIEW,"SCREEN_ITEMS_VIEW_CONTROL",WS_GROUP | WS_TABSTOP,1,13,278,135
+END
+
+IDD_LANGV_SVF_PARS_EVENTS_LIST DIALOGEX 0, 0, 410, 150
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_LVEVL_TITLE,"DLG_CONTROL_LIST_BOX_TITLE",0x0,1,3,408,9
+    RTEXT           " NumItems: %d ",IDC_LVEVL_NUM_ITEMS,332,3,71,8
+    CONTROL         "",IDC_LVEVL_LISTBOX,"DLG_CONTROL_LIST_BOX_BODY",WS_TABSTOP,1,13,408,136
+END
+
+IDD_LANGV_SVF_LEX_SOURCE_NEST DIALOG  0, 0, 110, 150
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Lexema sources nesting",IDC_LVLSN_TITLE,4,3,105,8
+    CONTROL         "",IDC_LVLSN_LISTBOX,"DLG_CONTROL_LIST_BOX_BODY",WS_TABSTOP,1,13,108,136
+END
+
+IDD_LANGV_SVF_COND_PARSE_NEST DIALOG  0, 0, 140, 150
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Conditional parsing nesting",IDC_LVCPN_TITLE,4,3,135,8
+    CONTROL         "",IDC_LVCPN_LISTBOX,"DLG_CONTROL_LIST_BOX_BODY",WS_TABSTOP,1,13,138,136
+END
+
+IDD_LANGV_SVF_EVENT_DETAILS DIALOG  0, 0, 280, 150
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Selection details",IDC_LVEDT_TITLE,4,3,275,8
+    CONTROL         "",IDC_LVEDT_BODY,"SCREEN_ITEMS_VIEW_CONTROL",WS_GROUP | WS_TABSTOP,1,13,278,136
+END
+
+IDD_LANGV_SVF_HISTORY_CONTROL DIALOGEX 0, 0, 173, 18
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "||<<",IDC_LVBHC_BTN_BEG,4,2,18,14
+    PUSHBUTTON      "<<",IDC_LVBHC_BTN_STEP_BACK,24,2,28,14
+    PUSHBUTTON      ">>",IDC_LVBHC_BTN_STEP_FORW,54,2,28,14
+    PUSHBUTTON      ">>||",IDC_LVBHC_BTN_END,84,2,18,14
+    LTEXT           "Step %d out of %d.",IDC_LVBHC_LAB_STATE,106,5,63,8
+END
+
+IDD_LANGV_SVF_MAIN_FRAME DIALOGEX 50, 80, 800, 450
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION " Simple Viewer Application "
+MENU IDM_SIMPLE_BROWSER_MENU
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "",IDC_SMPBRW_UPPER_GRP_BOX,-2,0,804,1
+    PUSHBUTTON      "Close",IDCANCEL,431,329,50,15
+END
+
+IDD_LANGV_CHLD_MID_LEV_TREE DIALOGEX 0, 0, 280, 150
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Parsing events",IDC_MLEVTR_TITLE,4,3,272,8
+    CONTROL         "",IDC_MLEVTR_BODY,"SCREEN_ITEMS_VIEW_CONTROL",WS_GROUP | WS_TABSTOP,1,13,278,135
+END
+
+IDD_LANGV_CHLD_CPP_ITEMS_TREE DIALOGEX 0, 0, 280, 150
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Cpp database objects",IDC_CPPITR_TITLE,4,3,272,8
+    CONTROL         "",IDC_CPPITR_BODY,"SCREEN_ITEMS_VIEW_CONTROL",WS_GROUP | WS_TABSTOP,1,13,278,135
+END
+
+IDD_LANGV_GRMV_RULES_GRID DIALOGEX 0, 0, 180, 158
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "",IDC_RULGRID_CURR_VIEW_TITLE,5,3,172,11,SS_NOPREFIX | SS_CENTERIMAGE
+    LTEXT           "",IDC_RULGRID_GRM_NAME_TITLE,4,3,172,9
+    CONTROL         "",IDC_RULGRID_SCR_ITEMS_VIEW,"SCREEN_ITEMS_VIEW_CONTROL",WS_GROUP | WS_TABSTOP,1,2,178,154
+END
+
+IDD_LANGV_GRMV_MAIN_FRAME DIALOGEX 50, 80, 500, 350
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION " Grammar Definition Viewer "
+MENU IDM_GRAMMAR_BROWSER_MENU
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "",IDC_GRMBRW_UPPER_GRP_BOX,-2,0,504,1
+    PUSHBUTTON      "Close",IDCANCEL,431,329,50,15
+END
+
+IDD_LANGV_ANPROC_STARTUP_DIALOG DIALOGEX 50, 80, 362, 135
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION " Grammar Conflicts Analysis "
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        " Grammar properties ",IDC_STATIC,6,3,350,51
+    LTEXT           "File name:",IDC_STATIC,16,16,36,8
+    LTEXT           "File length:",IDC_STATIC,16,28,36,8
+    LTEXT           "File date:",IDC_STATIC,16,38,36,8
+    LTEXT           "Grammars in the hierarchy:",IDC_STATIC,190,28,85,8
+    LTEXT           "Conflicts in the hierarchy:",IDC_STATIC,190,38,85,8
+    LTEXT           "<file_name>",IDC_ANPSTART_SRC_FNAME,58,16,294,8
+    LTEXT           "<file_length>",IDC_ANPSTART_SRC_LENGTH,58,28,100,8
+    LTEXT           "<file_date>",IDC_ANPSTART_SRC_DATE,58,38,100,8
+    RTEXT           "<15>",IDC_ANPSTART_SRC_GRMS_HIER,277,27,20,8
+    RTEXT           "<none>",IDC_ANPSTART_SRC_CFCTS_HIER,277,37,20,8
+    GROUPBOX        " Database directory ",IDC_STATIC,6,58,350,46
+    LTEXT           "Name:",IDC_STATIC,16,71,24,8
+    LTEXT           "<full_directory_name>",IDC_ANPSTART_DIR_NAME,44,71,304,8
+    PUSHBUTTON      "...",IDC_ANPSTART_DIR_BTN_ENTER_NAME,268,82,19,8
+    PUSHBUTTON      "...",IDC_ANPSTART_DIR_BTN_BROWSE,291,82,19,8
+    LTEXT           "<directory_state_message>",IDC_ANPSTART_DIR_MESSAGE,28,84,223,12
+    PUSHBUTTON      "Start new processing",IDC_ANPSTART_BTN_STARTOVER,35,113,90,15
+    PUSHBUTTON      "Continue current processing",IDC_ANPSTART_BTN_CONTINUE,132,113,114,15
+    PUSHBUTTON      "Cancel",IDC_ANPSTART_BTN_CANCEL,253,113,73,15
+END
+
+IDD_LANGV_ANPROC_ENTER_DIR_NAME DIALOGEX 50, 80, 280, 77
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION " Grammar Conflicts Analysis "
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        " Analysis database directory ",IDC_STATIC,6,5,268,45
+    LTEXT           "Name:",IDC_STATIC,14,23,24,8
+    EDITTEXT        IDC_ANPDN_ENTRY_FIELD,40,21,224,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "OK",IDOK,135,56,60,15
+    PUSHBUTTON      "Cancel",IDCANCEL,201,56,60,15
+END
+
+IDD_LANGV_ANPROC_EDIT_ANPROPS DIALOGEX 50, 80, 417, 183
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION " Process Grammar Conflicts "
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        " Processing Task ",IDC_STATIC,4,3,182,174
+    CONTROL         "Process all grammars in the tree",IDC_EDIT_ANP_ALL_GRAMMARS,
+                    "Button",BS_AUTORADIOBUTTON,15,18,128,10
+    CONTROL         "Process only one grammar",IDC_EDIT_ANP_SINGLE_GRAMMAR,
+                    "Button",BS_AUTORADIOBUTTON,15,30,103,10
+    LTEXT           "Grammar index:",IDC_EDIT_ANP_GRAMMAR_INX_LAB,33,45,49,8
+    EDITTEXT        IDC_EDIT_ANP_GRAMMAR_INX,87,43,46,12,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "Process all conflicts in the grammar",IDC_EDIT_ANP_ALL_CONFLICTS,
+                    "Button",BS_AUTORADIOBUTTON,32,59,128,10
+    CONTROL         "Process conflicts of one expected conflict",IDC_EDIT_ANP_CFCTS_SINGLE_XPCT,
+                    "Button",BS_AUTORADIOBUTTON,32,71,145,10
+    CONTROL         "Process conflicts from the list of conflicts",IDC_EDIT_ANP_CFCTS_DIRECT_LIST,
+                    "Button",BS_AUTORADIOBUTTON,32,83,141,10
+    CONTROL         "Process only one conflict",IDC_EDIT_ANP_SINGLE_CONFLICT,
+                    "Button",BS_AUTORADIOBUTTON,32,95,103,10
+    LTEXT           "Conflict index:",IDC_EDIT_ANP_CONFLICT_INX_LAB,38,110,56,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_ANP_CONFLICT_INX,99,108,76,12,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "Process all actions in the conflict",IDC_EDIT_ANP_ALL_ACTIONS,
+                    "Button",BS_AUTORADIOBUTTON,49,124,119,10
+    CONTROL         "Process only one action",IDC_EDIT_ANP_SINGLE_ACTION,
+                    "Button",BS_AUTORADIOBUTTON,49,136,93,10
+    LTEXT           "Action index:",IDC_EDIT_ANP_ACTION_INX_LAB,67,151,41,8
+    EDITTEXT        IDC_EDIT_ANP_ACTION_INX,113,149,46,12,ES_RIGHT | ES_AUTOHSCROLL
+    GROUPBOX        " Task Options ",IDC_STATIC,194,3,216,144
+    CONTROL         "Use all non terminal definition rules (not recommended)",IDC_EDIT_ANP_USE_ALL_RULES,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,207,18,192,10
+    CONTROL         "Search for extra non empty context",IDC_EDIT_ANP_SEARCH_FOR_CTX,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,207,30,132,10
+    LTEXT           "Max number of steps in the derivation path:",IDC_EDIT_ANP_MAX_PATH_LEN_LAB,207,48,138,8
+    EDITTEXT        IDC_EDIT_ANP_MAX_PATH_LEN,356,46,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "The number of steps should be in the range 4 ... %d.",IDC_EDIT_ANP_MAX_PATH_LEN_NOTE,221,61,181,8
+    LTEXT           "Max number of paths in one conflicting action:",IDC_EDIT_ANP_MAX_NUM_PATHS_LAB,207,76,147,8
+    EDITTEXT        IDC_EDIT_ANP_MAX_NUM_PATHS,356,74,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "There is no restriction when the max number of paths is 0.",IDC_EDIT_ANP_MAX_NUM_PATHS_NOTE,221,89,184,8
+    LTEXT           "Timeout for processing one conflicting action:",IDC_EDIT_ANP_ACT_PROC_TO_LAB,207,104,145,8
+    EDITTEXT        IDC_EDIT_ANP_ACT_PROC_TO,356,102,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "The timeout is expressed in seconds.",IDC_EDIT_ANP_ACT_PROC_TO_NOTE,221,116,126,8
+    PUSHBUTTON      "Ok",IDOK,250,157,50,15
+    PUSHBUTTON      "Cancel",IDCANCEL,307,157,50,15
+END
+
+IDD_LANGV_ANPROC_CONSOLE DIALOGEX 50, 80, 161, 138
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION " Grammar Conflicts Analysis "
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CTEXT           "Processing grammar",IDC_VPGRPR_MAIN_MESSAGE,0,8,160,8
+    CTEXT           "Startup: dd-mm-yy hh:mm:ss",IDC_VPGRPR_EXT_MESSAGE,0,22,160,8
+    GROUPBOX        " Misc properties and state ",IDC_VPGRPR_PRP_STT_GRPBOX,7,35,146,37
+    LTEXT           "PID:",IDC_STATIC,16,47,17,8
+    RTEXT           "XXXX",IDC_VPGRPR_PROCESS_ID,31,47,18,8
+    LTEXT           "Actions scheduled:",IDC_VPGRPR_ACTS_SCHEDULED_LAB,62,47,60,8
+    LTEXT           "Actions started:",IDC_VPGRPR_ACTS_STATUS_LAB,62,57,60,8
+    RTEXT           "35200",IDC_VPGRPR_ACTS_SCHEDULED,122,47,22,8
+    RTEXT           "48",IDC_VPGRPR_ACTS_STATUS,122,57,22,8
+    GROUPBOX        " Make forced iterator step at layer ",IDC_VPGRPR_BKR_INX_GRPBOX,7,76,146,37
+    LTEXT           "Zero based layer:",IDC_VPGRPR_BKR_INX_LAB,19,93,52,12
+    EDITTEXT        IDC_VPGRPR_BKR_INX_EDIT,73,91,30,12,ES_RIGHT | ES_AUTOHSCROLL
+    PUSHBUTTON      "Apply",IDC_VPGRPR_BKR_INX_BUTTON,112,95,29,10
+    LTEXT           "BUILD",IDC_VPGRPR_MSG_DEBUG,18,121,45,10
+    PUSHBUTTON      "Abort",IDCANCEL,55,118,50,15
+END
+
+IDD_LANGV_VPARS_SELECT_DRIVER DIALOGEX 50, 80, 510, 145
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION " Select Parsing Driver "
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        " Available parsing drivers ",IDC_VPSLPD_GRPBOX,4,3,502,118
+    CONTROL         "",IDC_VPSLPD_DRVLIST_TITLE,"DLG_CONTROL_LIST_BOX_TITLE",0x0,10,12,490,11
+    CONTROL         "",IDC_VPSLPD_DRVLIST_LISTBOX,"DLG_CONTROL_LIST_BOX_BODY",WS_TABSTOP,10,23,490,91
+    LTEXT           "Note:   Grammar can be loaded using any parsing driver. Result of loading will be the same. Driver/parser should be compatible with grammar only when the source code is parsed.",IDC_VPSLPD_USEAGE_NOTE,12,126,289,17
+    PUSHBUTTON      "Ok",IDOK,394,126,50,15
+    PUSHBUTTON      "Cancel",IDCANCEL,450,126,50,15
+END
+
+IDD_LANGV_VPARS_LOAD_PANEL DIALOGEX 0, 0, 88, 103
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        " Load box ",IDC_VPLDCT_GRPBOX,4,3,80,94
+    PUSHBUTTON      "Select Parser",IDC_VPLDCT_BTN_SELECT_DRIVER,10,15,68,14
+    PUSHBUTTON      "Load Grammar",IDC_VPLDCT_BTN_LOAD_GRAMMAR,10,30,68,14
+    PUSHBUTTON      "Load Source",IDC_VPLDCT_BTN_LOAD_SOURCE,10,45,68,14
+    PUSHBUTTON      "Process Cmdl",IDC_VPLDCT_BTN_PROCESS_CMDL,10,61,68,14
+END
+
+IDD_LANGV_VPARS_CONTROL_PANEL DIALOGEX 0, 0, 370, 110
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        " Control box ",IDC_VPCTRL_CTRL_GRPBOX,4,3,177,101
+    PUSHBUTTON      "Step",IDC_VPCTRL_BTN_STEP,10,15,30,15
+    PUSHBUTTON      "Run",IDC_VPCTRL_BTN_RUN,43,15,30,15
+    PUSHBUTTON      "Break",IDC_VPCTRL_BTN_BREAK,78,15,30,15
+    PUSHBUTTON      "Abort",IDC_VPCTRL_BTN_ABORT,112,15,48,15
+    PUSHBUTTON      "Continue",IDC_VPCTRL_BTN_GOON,28,15,50,15
+    PUSHBUTTON      "Unload",IDC_VPCTRL_BTN_UNLOAD,16,15,70,15
+    PUSHBUTTON      "Mid Lev Viewer",IDC_VPCTRL_BTN_MIDLEVDB,93,15,75,15
+    LTEXT           "State:",IDC_VPCTRL_CURR_STATE_LAB,11,34,21,8
+    LTEXT           "<Status>",IDC_VPCTRL_CURR_STATE_VAL,34,34,141,10
+    LTEXT           "<Details1>",IDC_VPCTRL_STATE_DETAILS1,21,46,155,8
+    LTEXT           "<Details2>",IDC_VPCTRL_STATE_DETAILS2,21,57,155,8
+    LTEXT           "<Details3>",IDC_VPCTRL_STATE_DETAILS3,21,68,152,24
+    LTEXT           "App explanation:",IDC_VPCTRL_APP_NOTE_TITLE,11,68,147,10
+    LTEXT           "<Application_Note>",IDC_VPCTRL_APP_NOTE_NOTE,21,79,152,21
+    LTEXT           "Manual conflict resolution:",IDC_VPCTRL_MANUAL_RES_HEADER,11,59,159,8
+    CONTROL         "Keep original conflict (defAction)",IDC_VPCTRL_BTN_KEEP_CONFLICT,
+                    "Button",BS_AUTORADIOBUTTON,62,72,113,10
+    CONTROL         "Act1",IDC_VPCTRL_BTN_ACT1,"Button",BS_AUTORADIOBUTTON,21,72,40,10
+    CONTROL         "Act2",IDC_VPCTRL_BTN_ACT2,"Button",BS_AUTORADIOBUTTON,21,84,40,10
+    CONTROL         "Act3",IDC_VPCTRL_BTN_ACT3,"Button",BS_AUTORADIOBUTTON,62,84,40,10
+    CONTROL         "Act4",IDC_VPCTRL_BTN_ACT4,"Button",BS_AUTORADIOBUTTON,103,84,40,10
+    LTEXT           "... %d actions total",IDC_VPCTRL_MORE_ACTIONS_LAB,147,85,27,8
+    GROUPBOX        " Parsing event type breakpoints ",IDC_VPCTRL_SETUP_GRPBOX,186,3,180,101
+    RTEXT           "Run",IDC_VPCTRL_RUN_LEFT,192,14,12,8
+    LTEXT           "Step",IDC_VPCTRL_STEP_LEFT,206,14,18,8
+    CONTROL         "",IDC_VPCTRL_CHK_STARTUP_RUN,"DLG_CONTROL_CHECKBOX",WS_TABSTOP,194,22,10,10
+    CONTROL         "",IDC_VPCTRL_CHK_STARTUP_STEP,"DLG_CONTROL_CHECKBOX",WS_TABSTOP,207,22,10,10
+    LTEXT           "Startup",IDC_VPCTRL_CHK_STARTUP_LAB,218,22,52,10
+    CONTROL         "",IDC_VPCTRL_CHK_COMPLETE_RUN,"DLG_CONTROL_CHECKBOX",WS_TABSTOP,194,32,10,10
+    CONTROL         "",IDC_VPCTRL_CHK_COMPLETE_STEP,"DLG_CONTROL_CHECKBOX",WS_TABSTOP,207,32,10,10
+    LTEXT           "Termination",IDC_VPCTRL_CHK_COMPLETE_LAB,218,32,52,10
+    CONTROL         "",IDC_VPCTRL_CHK_SYM_PICK_RUN,"DLG_CONTROL_CHECKBOX",WS_TABSTOP,194,42,10,10
+    CONTROL         "",IDC_VPCTRL_CHK_SYM_PICK_STEP,"DLG_CONTROL_CHECKBOX",WS_TABSTOP,207,42,10,10
+    LTEXT           "Symbol Pickup",IDC_VPCTRL_CHK_SYM_PICK_LAB,218,42,52,10
+    CONTROL         "",IDC_VPCTRL_CHK_SYM_UPDT_RUN,"DLG_CONTROL_CHECKBOX",WS_TABSTOP,194,52,10,10
+    CONTROL         "",IDC_VPCTRL_CHK_SYM_UPDT_STEP,"DLG_CONTROL_CHECKBOX",WS_TABSTOP,207,52,10,10
+    LTEXT           "Symbol Update",IDC_VPCTRL_CHK_SYM_UPDT_LAB,218,52,52,10
+    CONTROL         "",IDC_VPCTRL_CHK_SYM_DSCRD_RUN,"DLG_CONTROL_CHECKBOX",WS_TABSTOP,194,62,10,10
+    CONTROL         "",IDC_VPCTRL_CHK_SYM_DSCRD_STEP,"DLG_CONTROL_CHECKBOX",WS_TABSTOP,207,62,10,10
+    LTEXT           "Symbol Discard",IDC_VPCTRL_CHK_SYM_DSCRD_LAB,218,62,51,10
+    CONTROL         "",IDC_VPCTRL_CHK_RECOVERY_RUN,"DLG_CONTROL_CHECKBOX",WS_TABSTOP,194,72,10,10
+    CONTROL         "",IDC_VPCTRL_CHK_RECOVERY_STEP,"DLG_CONTROL_CHECKBOX",WS_TABSTOP,207,72,10,10
+    LTEXT           "Error Recovery",IDC_VPCTRL_CHK_RECOVERY_LAB,218,72,62,10
+    RTEXT           "Run",IDC_VPCTRL_RUN_RIGHT,271,14,12,8
+    LTEXT           "Step",IDC_VPCTRL_STEP_RIGHT,284,14,19,8
+    CONTROL         "",IDC_VPCTRL_CHK_ACT_PICK_RUN,"DLG_CONTROL_CHECKBOX",WS_TABSTOP,273,22,10,10
+    CONTROL         "",IDC_VPCTRL_CHK_ACT_PICK_STEP,"DLG_CONTROL_CHECKBOX",WS_TABSTOP,285,22,10,10
+    LTEXT           "Action Pickup",IDC_VPCTRL_CHK_ACT_PICK_LAB,297,22,62,10
+    CONTROL         "",IDC_VPCTRL_CHK_CFCT_PICK_RUN,"DLG_CONTROL_CHECKBOX",WS_TABSTOP,273,32,10,10
+    CONTROL         "",IDC_VPCTRL_CHK_CFCT_PICK_STEP,"DLG_CONTROL_CHECKBOX",WS_TABSTOP,285,32,10,10
+    LTEXT           "Conflict Pickup",IDC_VPCTRL_CHK_CFCT_PICK_LAB,297,32,62,10
+    CONTROL         "",IDC_VPCTRL_CHK_ACT_UPDT_RUN,"DLG_CONTROL_CHECKBOX",WS_TABSTOP,273,42,10,10
+    CONTROL         "",IDC_VPCTRL_CHK_ACT_UPDT_STEP,"DLG_CONTROL_CHECKBOX",WS_TABSTOP,285,42,10,10
+    LTEXT           "Action Update",IDC_VPCTRL_CHK_ACT_UPDT_LAB,297,42,62,10
+    CONTROL         "",IDC_VPCTRL_CHK_ACT_SHIFT_RUN,"DLG_CONTROL_CHECKBOX",WS_TABSTOP,273,52,10,10
+    CONTROL         "",IDC_VPCTRL_CHK_ACT_SHIFT_STEP,"DLG_CONTROL_CHECKBOX",WS_TABSTOP,285,52,10,10
+    LTEXT           "Action Symbol Shift",IDC_VPCTRL_CHK_ACT_SHIFT_LAB,298,52,62,10
+    CONTROL         "",IDC_VPCTRL_CHK_ACT_APPLY_RUN,"DLG_CONTROL_CHECKBOX",WS_TABSTOP,273,62,10,10
+    CONTROL         "",IDC_VPCTRL_CHK_ACT_APPLY_STEP,"DLG_CONTROL_CHECKBOX",WS_TABSTOP,285,62,10,10
+    LTEXT           "Action Apply Rule",IDC_VPCTRL_CHK_ACT_APPLY_LAB,297,62,62,10
+    CONTROL         "",IDC_VPCTRL_CHK_ENTR_NEST_RUN,"DLG_CONTROL_CHECKBOX",WS_TABSTOP,273,72,10,10
+    CONTROL         "",IDC_VPCTRL_CHK_ENTR_NEST_STEP,"DLG_CONTROL_CHECKBOX",WS_TABSTOP,285,72,10,10
+    LTEXT           "Enter nesting",IDC_VPCTRL_CHK_ENTR_NEST_LAB,297,72,62,10
+    CONTROL         "",IDC_VPCTRL_CHK_EXIT_NEST_RUN,"DLG_CONTROL_CHECKBOX",WS_TABSTOP,273,82,10,10
+    CONTROL         "",IDC_VPCTRL_CHK_EXIT_NEST_STEP,"DLG_CONTROL_CHECKBOX",WS_TABSTOP,285,82,10,10
+    LTEXT           "Exit nesting",IDC_VPCTRL_CHK_EXIT_NEST_LAB,297,82,62,10
+END
+
+IDD_LANGV_VPARS_SRC_BRK_POINTS DIALOGEX 0, 0, 153, 93
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        " Source code location breakpoints ",IDC_VPSRC_BRKPNT_GRPBOX,4,3,145,84
+    CONTROL         "",IDC_VPSRC_BRKPNT_TITLE,"DLG_CONTROL_LIST_BOX_TITLE",0x0,10,13,133,8
+    CONTROL         "",IDC_VPSRC_BRKPNT_LISTBOX,"DLG_CONTROL_LIST_BOX_BODY",WS_TABSTOP,10,22,133,56
+    PUSHBUTTON      "Goto Source",IDC_VPSRC_BRKPNT_BTN_GOTO,14,81,46,10,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Add",IDC_VPSRC_BRKPNT_BTN_ADD,69,81,20,10,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Edit",IDC_VPSRC_BRKPNT_BTN_EDIT,91,81,20,10,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Delete",IDC_VPSRC_BRKPNT_BTN_DEL,113,81,26,10,0,WS_EX_STATICEDGE
+END
+
+IDD_LANGV_VPARS_SYNTAX_TREE DIALOGEX 0, 0, 280, 152
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "<Descr>",IDC_SYNTR_LABEL,5,3,272,8
+    CONTROL         "",IDC_SYNTR_TREE_VIEW,"SCREEN_ITEMS_VIEW_CONTROL",WS_GROUP | WS_TABSTOP,1,12,278,123
+    LTEXT           "Items:",IDC_SYNTR_TOTAL_LAB,5,138,22,8
+    LTEXT           "615 270",IDC_SYNTR_TOTAL_VAL,32,138,36,8
+    RTEXT           "Current zoom: 1.00",IDC_SYNTR_CURR_ZOOM,189,138,82,8
+END
+
+IDD_LANGV_VPARS_CURRENT_STATE DIALOGEX 0, 0, 140, 152
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "",IDC_VPCSTT_LABEL,5,3,132,8
+    CONTROL         "",IDC_VPCSTT_SVIEW,"SCREEN_ITEMS_VIEW_CONTROL",WS_GROUP | WS_TABSTOP,1,12,138,123
+END
+
+IDD_LANGV_VPARS_EMPTY_STACK DIALOGEX 0, 0, 340, 152
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "",IDC_VPSUPP_LABEL,5,3,330,8
+    CONTROL         "",IDC_VPSUPP_SVIEW,"SCREEN_ITEMS_VIEW_CONTROL",WS_GROUP | WS_TABSTOP,1,12,338,123
+END
+
+IDD_LANGV_VPARS_EMPTY_INPUT DIALOGEX 0, 0, 230, 152
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "",IDC_VPSUPP_LABEL,5,3,220,8
+    CONTROL         "",IDC_VPSUPP_SVIEW,"SCREEN_ITEMS_VIEW_CONTROL",WS_GROUP | WS_TABSTOP,1,12,228,123
+END
+
+IDD_LANGV_VPARS_GRAMMAR_INFO DIALOGEX 0, 0, 150, 150
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Parser:",IDC_VPGRMI_PARS_TITLE,4,3,23,8
+    LTEXT           "<descr>",IDC_VPGRMI_PARS_DESCR,29,3,59,8
+    LTEXT           "Grammar:",IDC_VPGRMI_GRMF_TITLE,4,13,31,8
+    LTEXT           "<fname>",IDC_VPGRMI_GRMF_NAME,37,13,108,8
+    PUSHBUTTON      "View grammar",IDC_VPGRMI_BTN_GRM_VIEW,94,2,52,10,0,WS_EX_STATICEDGE
+    CONTROL         "",IDC_VPGRMI_GRMF_VIEW,"SCREEN_ITEMS_VIEW_CONTROL",WS_GROUP | WS_TABSTOP,1,23,148,125
+END
+
+IDD_LANGV_VPARS_MAIN_FRAME DIALOGEX 25, 40, 640, 396
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION " Visual Parser "
+MENU IDM_VISUAL_PARSER_MENU
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "",IDC_VPARS_UPPER_GRP_BOX,-2,0,644,1
+    PUSHBUTTON      "Close",IDCANCEL,590,380,50,15
+END
+
+IDD_LANGV_CPPV_GLOBAL_NAMESP DIALOGEX 0, 0, 150, 177
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "160,160,164",IDC_CPP_GLB_NAMESP_LAB_BKGR,
+                    "DLG_CONTROL_BRUSHED_STATIC",0x0,3,5,145,3
+    LTEXT           "  Global namespace:",IDC_CPP_GLB_NAMESP_LABEL,14,3,59,7
+    CTEXT           " NumItems: %d ",IDC_CPP_GLB_NAMESP_NUM_ITEMS,84,3,58,7
+    CONTROL         "",IDC_CPP_GLB_NAMESP_TITLE,"DLG_CONTROL_LIST_BOX_TITLE",0x0,1,11,148,9
+    CONTROL         "",IDC_CPP_GLB_NAMESP_LISTBOX,"DLG_CONTROL_LIST_BOX_BODY",WS_TABSTOP,1,20,148,146
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDM_SIMPLE_BROWSER_MENU MENU 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Open source file ...",        IDM_SMPBRW_MENU_FILE_OPEN_AND_RUN
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        IDM_SMPBRW_MENU_FILE_EXIT
+    END
+    POPUP "Actions"
+    BEGIN
+        MENUITEM "Set special window size",     IDM_SMPBRW_MENU_ACTS_WINDOW_SIZE
+        MENUITEM "Select color ...",            IDM_SMPBRW_MENU_ACTS_COLOR_EDIT
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About",                       IDM_SMPBRW_MENU_HELP_ABOUT
+    END
+END
+
+IDM_GRAMMAR_BROWSER_MENU MENU 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Load grammar definition ...", IDM_GRMBRW_MENU_FILE_LOAD_DEFN
+        MENUITEM "Load grammar defn rules only ...", IDM_GRMBRW_MENU_FILE_LOAD_DFNR
+        MENUITEM "Load conflicts analysis database ...", IDM_GRMBRW_MENU_FILE_LOAD_ANDB
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        IDM_GRMBRW_MENU_FILE_EXIT
+    END
+    POPUP "Actions"
+    BEGIN
+        MENUITEM "Open extra browser ...",      IDM_GRMBRW_MENU_ACTS_OPEN_EXTBR
+        MENUITEM "Open parsing events ...",     IDM_GRMBRW_MENU_ACTS_OPEN_MIDLEV
+        MENUITEM SEPARATOR
+        MENUITEM "Process conflicts ...",       IDM_GRMBRW_MENU_ACTS_PROC_CFCTS
+        POPUP "Find patterms"
+        BEGIN
+            MENUITEM "Find empty and transparent non terminals", IDM_GRMBRW_MENU_ACTS_EMPTRA_NTERMS
+            MENUITEM "Find non terminals that allow direct construction from terminals", IDM_GRMBRW_MENU_ACTS_TRIVAL_NTERMS
+            MENUITEM SEPARATOR
+            MENUITEM "Prepare non terminals use intensity report", IDM_GRMBRW_MENU_ACTS_NTERMS_USAGE
+            MENUITEM "Prepare non terminals definition distances report", IDM_GRMBRW_MENU_ACTS_NTERMS_DISTS
+            MENUITEM "Prepare non terminals call distances report", IDM_GRMBRW_MENU_ACTS_NTERMS_CDISTS
+            MENUITEM SEPARATOR
+            MENUITEM "Get path lengths statistics", IDM_GRMBRW_MENU_ACTS_PATH_LENGTHS
+            MENUITEM SEPARATOR
+            MENUITEM "Classify all grammar conflicts", IDM_GRMBRW_MENU_ACTS_CLASSIFY_CFCTS
+            MENUITEM "Classify unexpected conflicts", IDM_GRMBRW_MENU_ACTS_CLASSIFY_UNXPS
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Set special window size",     IDM_GRMBRW_MENU_ACTS_WINDOW_SIZE
+        MENUITEM "Select color ...",            IDM_GRMBRW_MENU_ACTS_COLOR_EDIT
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About",                       IDM_GRMBRW_MENU_HELP_ABOUT
+    END
+END
+
+IDM_VISUAL_PARSER_MENU MENU 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Exit",                        IDM_VPARS_MENU_FILE_EXIT
+    END
+    POPUP "Actions"
+    BEGIN
+        MENUITEM "Generate control flow data ...", IDM_VPARS_MENU_ACTS_CODE_GEN
+        MENUITEM SEPARATOR
+        MENUITEM "Set special window size",     IDM_VPARS_MENU_ACTS_WINDOW_SIZE
+        MENUITEM "Select color ...",            IDM_VPARS_MENU_ACTS_COLOR_EDIT
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About",                       IDM_VPARS_MENU_HELP_ABOUT
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.H""\r\n"
+    "#include ""../LangView/LangViewResources.H""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_LANGV_ANPROC_EDIT_ANPROPS, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 182
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
